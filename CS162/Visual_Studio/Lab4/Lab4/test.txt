@@ -1,0 +1,20 @@
+Student
+Bryan
+37
+3.7
+
+Instructor
+Bob
+56
+4.9
+
+Student
+Random Dude
+37
+2.78762
+
+Instructor
+Darth Vader
+84
+1.0437
+

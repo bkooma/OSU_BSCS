@@ -1,0 +1,14 @@
+Get number of integers from user
+Set integer counter to 2
+Get first integer from user
+Set first integer to min and max
+While integer counter <= user integer count
+  Input the next integer
+  If integer < min
+    Then min = integer
+  If integer > max
+    Then max = integer
+  Add 1 to the integer counter
+Print the min
+Print the max
+  

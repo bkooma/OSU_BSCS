@@ -1,0 +1,12 @@
+Student
+Byron Kooima
+34
+3.9
+Instructor
+David Smith
+54
+4.5
+Student
+Han Solo
+87
+3.4
