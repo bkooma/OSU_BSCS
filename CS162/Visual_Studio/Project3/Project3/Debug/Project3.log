@@ -1,0 +1,13 @@
+﻿  combatGame.cpp
+c:\users\bkooi\google drive\osu\osu_bscs\cs162\visual_studio\project3\project3\combatgame.cpp(241): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+  Creature.cpp
+  Generating Code...
+  Compiling...
+  Vampire.cpp
+  Medusa.cpp
+  HarryPotter.cpp
+  BlueMen.cpp
+  Barbarian.cpp
+  Generating Code...
+  Project3.vcxproj -> C:\Users\bkooi\Google Drive\OSU\OSU_BSCS\CS162\Visual_Studio\Project3\Debug\Project3.exe
+  Project3.vcxproj -> C:\Users\bkooi\Google Drive\OSU\OSU_BSCS\CS162\Visual_Studio\Project3\Debug\Project3.pdb (Partial PDB)

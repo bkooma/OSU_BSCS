@@ -16,15 +16,15 @@ class Paper : public Tool
 {
 public:
 	//Default constructor for Paper.
-    Paper();
+	Paper();
 
 	// User defined constructor for Paper.
-    Paper(int strength);
+	Paper(int strength);
 
 	/*********************************************************************************
 	// Passes in a Tool randomly created by the computer and determines the Paper's
 	// strength based on the computer input. The strengths of each Tool is compared
 	// to determine the winner of the current round.
 	**********************************************************************************/
-    FightResult fight(Tool* tool);
+	FightResult fight(Tool* tool);
 };

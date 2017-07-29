@@ -16,15 +16,15 @@ class Rock : public Tool
 {
 public:
 	//Default constructor for Rock.
-    Rock();
+	Rock();
 
     // User defined constructor for Rock.
-    Rock(int strength);
+	Rock(int strength);
 
 	/*******************************************************************************
-    // Passes in a Tool randomly created by the computer and determines the Rock's
-    // strength based on the computer input. The strengths of each Tool is compared
-    // to determine the winner of the current round.
+	// Passes in a Tool randomly created by the computer and determines the Rock's
+	// strength based on the computer input. The strengths of each Tool is compared
+	// to determine the winner of the current round.
 	*******************************************************************************/
-    FightResult fight(Tool* tool);
+	FightResult fight(Tool* tool);
 };

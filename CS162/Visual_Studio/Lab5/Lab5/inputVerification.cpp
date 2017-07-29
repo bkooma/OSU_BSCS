@@ -32,7 +32,7 @@ template <class InputType>
 ** Post-Conditions: Passes by reference the verified value entered by
 ** 					the user.
 *********************************************************************/
-void SafeInput(InputType & InputVar, std::function <bool (InputType &)>	Predicate, char s[]) {
+void SafeInput(InputType & InputVar, std::function <bool (InputType &)>	Predicate, std::string s) {
 	for (;; ) {
 		std::cin >> InputVar;
 

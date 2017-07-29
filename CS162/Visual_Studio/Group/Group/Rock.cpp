@@ -23,8 +23,8 @@
 *********************************************************************/
 Rock::Rock()
 {
-  this->strength = 1;
-  this->type = 'r';
+	this->strength = 1;
+	this->type = 'r';
 }
 
 /*********************************************************************
@@ -37,7 +37,7 @@ Rock::Rock()
 *********************************************************************/
 Rock::Rock(int strength) : Tool(strength)
 {
-  this->type = 'r';
+	this->type = 'r';
 }
 
 /*********************************************************************
@@ -53,37 +53,27 @@ Rock::Rock(int strength) : Tool(strength)
 
 FightResult Rock::fight(Tool* tool)
 {
-  int rStrength = 1;
-  FightResult roundWLD;
+	int rStrength = 1;
+	FightResult roundWLD;
 
   // Adjust strength of Rock against computer opponent
-  if (tool->getType() == 'p')
-  {
-	  rStrength = (this->strength)/2;
-  }
-  else if (tool->getType() == 's')
-  {
-      rStrength = (this->strength)*2;
-  }
-  else {
-	  rStrength = this->strength;
-  }
+	if (tool->getType() == 'p')
+		rStrength = (this->strength)/2;
+	else if (tool->getType() == 's')
+		rStrength = (this->strength)*2;
+	else
+		rStrength = this->strength;
 
-  std::cout << "Your rock strength is " << rStrength << "\n";
-  // Compare strengths after adjusting for opposing computer's Tool
-  if (rStrength > tool->getStrength())
-  {
-      roundWLD = WIN;
-  }
-  else if (rStrength < tool->getStrength())
-  {
-      roundWLD = LOSE;
-  }
-  else
-  {
-      roundWLD = DRAW;
-  }
+	std::cout << "Your rock strength is " << rStrength << "\n";
+	
+	// Compare strengths after adjusting for opposing computer's Tool
+	if (rStrength < tool->getStrength())
+		roundWLD = LOSE;
+	else if (rStrength > tool->getStrength())
+		roundWLD = WIN;
+	else
+		roundWLD = DRAW;
 
-  // Returns the enumerated value if user wins/loses/ties
-  return roundWLD;
+	// Returns the enumerated value if user wins/loses/ties
+	return roundWLD;
 }

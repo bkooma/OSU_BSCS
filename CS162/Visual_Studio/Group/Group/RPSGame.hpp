@@ -22,11 +22,13 @@ protected:
 
 public:
 	RPSGame();
-	~RPSGame();
+
 	void play();
 	void setComputerTool(int rStr, int pStr, int sStr);
 	void setPlayerTool(std::string toolType, int rStr, int pStr, int sStr);
 	void printScore();
+
+	~RPSGame();
 };
 
 #endif

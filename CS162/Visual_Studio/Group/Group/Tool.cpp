@@ -3,18 +3,35 @@
 ** Author:  Byron Kooima
 ** Date: 2017/07/23
 ** Description: CS162 Week5 Group 10
-** Description: Implementation file for the Tool class. It contains default
-				behavior that will be inherited by classes derived from Tool.
+** The Tool class represents a Tool Base class. It creates the strength, type,
+** and fight() function for the RPG derived classes. The fight function passes
+** in a Tool pointer and establishes the strength of Tool when playing against
+** computer Tool. fight() returns the enumerated "FightResult" value based on
+** the results of taking on the computer's Tool.
 ******************************************************************************/
 #include "Tool.hpp"
 
-//Default constructor
+/*********************************************************************
+** Function: 		Tool::Tool
+** Description:		Default constructor for Tool. Sets all protected
+** 					members	to initial values.
+** Parameters:		N/A
+** Pre-Conditions: 	N/A
+** Post-Conditions: Tool members initialized.
+*********************************************************************/
 Tool::Tool()
 {
 	this->strength = 1;
 }
 
-//Parameterized constructor
+/*********************************************************************
+** Function:		Tool::Tool
+** Description:		User defined constructor for Tool. Sets Tool
+**					strength from user input.
+** Parameters:		strength		Tool strength for this round
+** Pre-Conditions:	N/A
+** Post-Conditions: Tool strength value is set by user.
+*********************************************************************/
 Tool::Tool(int strength)
 {
 	this->strength = strength;

@@ -52,12 +52,12 @@ int userMenu::makeChoice() {
 	int choiceSize = choice.size() + 1;
 
 	// Error message for the inputVerification class
-	char verString[100] = { "Select a valid input option.\n" };
+	std::string varString = "Select a valid input option.\n";
 	// Input verification provided by the user
 	SafeInput <int>(selectedChoice,
 		[=](int Input) -> bool {
 		return (!std::cin.fail() && (std::cin.peek() == EOF || std::cin.peek() == '\n') && (Input > 0 && Input < choiceSize));
-	}, verString);
+	}, varString);
 	// Returns the valid menu choice selected by the user
 	return selectedChoice;
 }

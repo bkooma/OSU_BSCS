@@ -10,10 +10,21 @@
 
 #include <string>
 
-void reverse(std::string s);
-int arraySum(int arr[], int elements);
-int triangleSum(int rowNum);
+class Recursion {
+public:
+	// Default constructor for Recursion
+	Recursion();
+	//Use recursion to reverses the characters of a user provided string
+	void reverse(std::string s);
+	// Use recursion to sum up all the elements of an array
+	int arraySum(int arr[], int elements);
+	// Use recursion to sum up the number of elements in a triangle of size N
+	int triangleSum(int rowNum);
 
-void recursionMenu();
+	// Recursion menu options
+	void recursionMenu();
 
+	// Recursion Destructor
+	~Recursion();
+};
 #endif // !RECURSION_HPP

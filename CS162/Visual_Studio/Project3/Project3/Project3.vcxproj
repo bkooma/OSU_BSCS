@@ -110,6 +110,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Barbarian.hpp" />
+    <ClInclude Include="BlueMen.hpp" />
+    <ClInclude Include="Creature.hpp" />
+    <ClInclude Include="HarryPotter.hpp" />
+    <ClInclude Include="Medusa.hpp" />
+    <ClInclude Include="userMenu.hpp" />
+    <ClInclude Include="Vampire.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Barbarian.cpp" />
+    <ClCompile Include="BlueMen.cpp" />
+    <ClCompile Include="Creature.cpp" />
+    <ClCompile Include="HarryPotter.cpp" />
+    <ClCompile Include="combatGame.cpp" />
+    <ClCompile Include="inputVerification.cpp" />
+    <ClCompile Include="Medusa.cpp" />
+    <ClCompile Include="userMenu.cpp" />
+    <ClCompile Include="Vampire.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram2.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

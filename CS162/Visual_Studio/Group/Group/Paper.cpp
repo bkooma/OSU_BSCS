@@ -37,7 +37,7 @@ Paper::Paper()
 *********************************************************************/
 Paper::Paper(int strength) : Tool(strength)
 {
-  this->type = 'p';
+	this->type = 'p';
 }
 
 /*********************************************************************
@@ -57,32 +57,21 @@ FightResult Paper::fight(Tool* tool)
 
 	// Adjust strength of Paper against computer opponent
 	if (tool->getType() == 's')
-	{
 		pStrength = (this->strength) / 2;
-	}
 	else if (tool->getType() == 'r')
-	{
 		pStrength = (this->strength) * 2;
-	}
-	else {
+	else
 		pStrength = this->strength;
-	}
 
-  std::cout << "Your paper strength is " << pStrength << "\n";
-  // Compare strengths after adjusting for opposing computer's Tool
-  if (pStrength > tool->getStrength())
-  {
-      roundWLD = WIN;
-  }
-  else if (pStrength < tool->getStrength())
-  {
-      roundWLD = LOSE;
-  }
-  else
-  {
-      roundWLD = DRAW;
-  }
+	std::cout << "Your paper strength is " << pStrength << "\n";
+	// Compare strengths after adjusting for opposing computer's Tool
+	if (pStrength < tool->getStrength())
+		roundWLD = LOSE;
+	else if (pStrength > tool->getStrength())
+		roundWLD = WIN;
+	else
+		roundWLD = DRAW;
 
-  // Returns the enumerated value if user wins/loses/ties
-  return roundWLD;
+	// Returns the enumerated value if user wins/loses/ties
+	return roundWLD;
 }

@@ -23,8 +23,8 @@
 *********************************************************************/
 Scissors::Scissors()
 {
-    this->strength = 1;
-    this->type = 's';
+	this->strength = 1;
+	this->type = 's';
 }
 
 /*********************************************************************
@@ -37,7 +37,7 @@ Scissors::Scissors()
 *********************************************************************/
 Scissors::Scissors(int strength) : Tool(strength)
 {
-    this->type = 's';
+	this->type = 's';
 }
 
 /*********************************************************************
@@ -53,36 +53,26 @@ Scissors::Scissors(int strength) : Tool(strength)
 FightResult Scissors::fight(Tool* tool)
 {
 	int sStrength = 1;
-    FightResult fightResult;
+	FightResult roundWLD;
 
 	// Adjust strength of Rock against computer opponent
-    if (tool->getType() == 'r')
-    {
+	if (tool->getType() == 'r')
 		sStrength = (this->strength) / 2;
-    }
-    else if (tool->getType() == 'p')
-    {
+	else if (tool->getType() == 'p')
 		sStrength = (this->strength) * 2;
-    }
-	else {
+	else
 		sStrength = this->strength;
-	}
 
 	std::cout << "Your scissors strength is " << sStrength << "\n";
+	
 	// Compare strengths after adjusting for opposing computer's Tool
-    if (sStrength > tool->getStrength())
-    {
-        fightResult = WIN;
-    }
+	if (sStrength < tool->getStrength())
+		roundWLD = LOSE;
     else if (sStrength < tool->getStrength())
-    {
-        fightResult = LOSE;
-    }
+		roundWLD = WIN;
     else
-    {
-        fightResult = DRAW;
-    }
+		roundWLD = DRAW;
 
 	// Returns the enumerated value if user wins/loses/ties
-    return fightResult;
+	return roundWLD;
 }
