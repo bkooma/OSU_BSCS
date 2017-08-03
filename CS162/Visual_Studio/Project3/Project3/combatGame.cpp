@@ -88,8 +88,8 @@ int main()
 
 			printRound(O1, O2);
 
-			O1->revive();
-			O2->revive();
+			O1->recover_strength();
+			O2->recover_strength();
 		}
 
 		else if (mainChoice == 2) {
@@ -132,8 +132,8 @@ void randomCombat()
 			std::cout << "Let's get ready to Rumble!\n";
 			printRound(O1, O2);
 
-			O1->revive();
-			O2->revive();
+			O1->recover_strength();
+			O2->recover_strength();
 			matches++;
 		}
 	}
@@ -156,17 +156,24 @@ void playRound(Creature * pOffense, Creature * pDefense, int round, bool pStart)
 	std::string pOff;
 	std::string pDef;
 
-	while (!pOffense->is_dead() && !pDefense->is_dead()) {
+	// Recursive function to continue attacks until one of the Creatures is defeated
+	while (!pOffense->defeated() && !pDefense->defeated()) {
 		int damage = 0;
-		int offenseRoll = pOffense->attackRoll();
-		int defenseRoll = pDefense->defenseRoll();
+		// Roll die for the attack
+		int offenseRoll = pOffense->attack_roll();
+		// Roll die for the defense
+		int defense_roll = pDefense->defense_roll();
 
-		if (pOffense->get_special() == "Glare") {
-			offenseRoll = pDefense->get_strength() + pDefense->get_armor() + defenseRoll;
+		// Check if Medusa used GLARE in the attack
+		if (pOffense->get_special() == "GLARE") {
+			// Set Medusa's attack strength equal to the remaining strength of defender plus total defense
+			offenseRoll = pDefense->get_strength() + pDefense->get_armor() + defense_roll;
 		}
 
-		damage = pDefense->inflict_pain(offenseRoll, defenseRoll);
+		// Determine the amount of strength left after offense/defense roll
+		damage = pDefense->inflict_pain(offenseRoll, defense_roll);
 
+		// Set player strings based on who was randomly selected to start
 		if (!pStart) {
 			pOff = "O1: ";
 			pDef = "O2: ";
@@ -176,35 +183,42 @@ void playRound(Creature * pOffense, Creature * pDefense, int round, bool pStart)
 			pDef = "O1: ";
 		}
 
+		// For every odd round, set up the output statements
 		if (round % 2 == 1) {
 			p1Round = "Attack:  ";
+			// Determine if any offensive specials were used and output to screen 
 			if (pOffense->get_special() != "") {
 				p1Round = p1Round + "(" + pOffense->get_special() + ")";
 			}
+			// If no specials were used, print the strength of the offense roll
 			else {
 				p1Round = p1Round + std::to_string(offenseRoll);
 			}
 
 			p2Round = "|  Defense: ";
+			// Determine if any defensive specials were used and output to screen
 			if (pDefense->get_special() != "") {
 				p2Round = p2Round + "(" + pDefense->get_special() + ")";
 			}
+			// If no specials were used, print the strength of the defensive roll + armor
 			else {
-				p2Round = p2Round + std::to_string(defenseRoll) + " + armor: " + std::to_string(pDefense->get_armor());
+				p2Round = p2Round + std::to_string(defense_roll) + " + armor: " + std::to_string(pDefense->get_armor());
 			}
 
+			// Format the output for each round
 			std::cout << std::setw(10) << round << std::setw(33) << p1Round << std::setw(33) << p2Round;
 			std::cout << std::setw(5) << pDef + "-" << std::setw(5) << damage;
 			std::cout << std::setw(5) << pDef << std::setw(5) << pDefense->get_strength() << std::endl;
 		}
 
+		// For every odd round, set up the output statements
 		if (round % 2 == 0) {
 			p1Round = "Defense:  ";
 			if (pDefense->get_special() != "") {
 				p1Round = p1Round + "(" + pDefense->get_special() + ")";
 			}
 			else {
-				p1Round = p1Round + std::to_string(defenseRoll) + " + armor: " + std::to_string(pDefense->get_armor());
+				p1Round = p1Round + std::to_string(defense_roll) + " + armor: " + std::to_string(pDefense->get_armor());
 			}
 
 			p2Round = "|  Attack: ";
@@ -220,7 +234,7 @@ void playRound(Creature * pOffense, Creature * pDefense, int round, bool pStart)
 			std::cout << std::setw(5) << pDef << std::setw(5) << pDefense->get_strength() << std::endl << std::endl;
 		}
 		round++;
-		if (!pDefense->is_dead()) {
+		if (!pDefense->defeated()) {
 			pStart = !pStart;
 			playRound(pDefense, pOffense, round, pStart);
 		}
@@ -276,10 +290,10 @@ void printRound(Creature * O1, Creature * O2)
 	}
 
 	std::cout << std::string(95, '=') << std::endl;
-	if (O1->is_dead()) {
+	if (O1->defeated()) {
 		std::cout << "Player2's " << O2->get_name() << " is the winner!\n\n";
 	}
-	else if (O2->is_dead()) {
+	else if (O2->defeated()) {
 		std::cout << "Player1's " << O1->get_name() << " is the winner!\n\n";
 	}
 }

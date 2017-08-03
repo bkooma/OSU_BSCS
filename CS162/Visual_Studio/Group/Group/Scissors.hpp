@@ -1,6 +1,7 @@
 /***************************************************************************************
 ** scissors.hpp is the Scissors class specification file.
-** Author:  Byron Kooima
+** Authors:  Byron Kooima, Alexander Jennison, Polly Sobeck,
+**           Dai Duong Nguyen, Zachary Bellone
 ** Date: 2017/07/30
 ** Description: CS162 Week5 Group10
 ** The scissors class represents a Scissors Derived class. It inherits the strength,

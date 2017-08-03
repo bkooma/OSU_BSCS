@@ -1,6 +1,7 @@
 /**************************************************************************************
 ** paper.cpp is the Paper derived class function implementation file.
-** Author:  Byron Kooima
+** Authors:  Byron Kooima, Alexander Jennison, Polly Sobeck,
+**           Dai Duong Nguyen, Zachary Bellone
 ** Date: 2017/07/30
 ** Description: CS162 Week5 Group10
 ** The paper class represents a Paper Derived class. It inherits the strength, type, and
@@ -23,7 +24,7 @@
 *********************************************************************/
 Paper::Paper()
 {
-	this->strength = 1;
+	this->setStrength(1);
 	this->type = 'p';
 }
 
@@ -57,11 +58,11 @@ FightResult Paper::fight(Tool* tool)
 
 	// Adjust strength of Paper against computer opponent
 	if (tool->getType() == 's')
-		pStrength = (this->strength) / 2;
+		pStrength = (this->getStrength()) / 2;
 	else if (tool->getType() == 'r')
-		pStrength = (this->strength) * 2;
+		pStrength = (this->getStrength()) * 2;
 	else
-		pStrength = this->strength;
+		pStrength = this->getStrength();
 
 	std::cout << "Your paper strength is " << pStrength << "\n";
 	// Compare strengths after adjusting for opposing computer's Tool

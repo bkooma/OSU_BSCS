@@ -1,6 +1,7 @@
 /******************************************************************************
-** tool.hpp is the Tool Base class specification file.
-** Author:  Byron Kooima
+** Tool.hpp is the Tool Base class specification file.
+** Authors:  Byron Kooima, Alexander Jennison, Polly Sobeck,
+**           Dai Duong Nguyen, Zachary Bellone
 ** Date: 2017/07/23
 ** Description: CS162 Week5 Group 10
 ** The Tool class represents a Tool Base class. It creates the strength, type, 
@@ -23,12 +24,17 @@ protected:
 public:
 	// Default Constructor
 	Tool();
+	// User defined constructor
 	Tool(int strength);
-	void setStrength(int strength);
-	int getStrength() const;
-	char getType() const;
 	// Pure abstract function
 	virtual FightResult fight(Tool *tool) = 0;
+	// Set the Tool strength
+	void setStrength(int);
+	// Getters
+	// Get the Tool strength
+	int getStrength();
+	// Get the Tool type
+	char getType();
 	// Virtual Destructor
 	virtual ~Tool();
 };

@@ -1,6 +1,7 @@
 /**************************************************************************************
 ** scissors.cpp is the Scissors derived class function implementation file.
-** Author:  Byron Kooima
+** Authors:  Byron Kooima, Alexander Jennison, Polly Sobeck,
+**           Dai Duong Nguyen, Zachary Bellone
 ** Date: 2017/07/30
 ** Description: CS162 Week5 Group10
 ** The scissors class represents a Scissors Derived class. It inherits the strength, 
@@ -23,7 +24,7 @@
 *********************************************************************/
 Scissors::Scissors()
 {
-	this->strength = 1;
+	this->setStrength(1);
 	this->type = 's';
 }
 
@@ -57,18 +58,18 @@ FightResult Scissors::fight(Tool* tool)
 
 	// Adjust strength of Rock against computer opponent
 	if (tool->getType() == 'r')
-		sStrength = (this->strength) / 2;
+		sStrength = (this->getStrength()) / 2;
 	else if (tool->getType() == 'p')
-		sStrength = (this->strength) * 2;
+		sStrength = (this->getStrength()) * 2;
 	else
-		sStrength = this->strength;
+		sStrength = this->getStrength();
 
 	std::cout << "Your scissors strength is " << sStrength << "\n";
 	
 	// Compare strengths after adjusting for opposing computer's Tool
 	if (sStrength < tool->getStrength())
 		roundWLD = LOSE;
-    else if (sStrength < tool->getStrength())
+    else if (sStrength > tool->getStrength())
 		roundWLD = WIN;
     else
 		roundWLD = DRAW;

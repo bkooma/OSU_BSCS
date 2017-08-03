@@ -26,9 +26,6 @@
     <ClInclude Include="Tool.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="userMenu.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="inputVerification.cpp">
@@ -50,9 +47,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Tool.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="userMenu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

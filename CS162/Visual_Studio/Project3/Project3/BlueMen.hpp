@@ -16,9 +16,9 @@ class BlueMen: public Creature {
 public:
 	BlueMen();
 
-	virtual int attackRoll();
-	virtual int defenseRoll();
-	virtual void revive();
+	virtual int attack_roll();
+	virtual int defense_roll();
+	virtual void recover_strength();
 
 	virtual ~BlueMen();
 };

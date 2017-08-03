@@ -1,6 +1,7 @@
 /******************************************************************************
 ** Tool.cpp is the Paper class function implementation file.
-** Author:  Byron Kooima
+** Authors:  Byron Kooima, Alexander Jennison, Polly Sobeck,
+**           Dai Duong Nguyen, Zachary Bellone
 ** Date: 2017/07/23
 ** Description: CS162 Week5 Group 10
 ** The Tool class represents a Tool Base class. It creates the strength, type,
@@ -19,9 +20,8 @@
 ** Pre-Conditions: 	N/A
 ** Post-Conditions: Tool members initialized.
 *********************************************************************/
-Tool::Tool()
+Tool::Tool() : strength(1)
 {
-	this->strength = 1;
 }
 
 /*********************************************************************
@@ -32,24 +32,43 @@ Tool::Tool()
 ** Pre-Conditions:	N/A
 ** Post-Conditions: Tool strength value is set by user.
 *********************************************************************/
-Tool::Tool(int strength)
+Tool::Tool(int str) : strength(str)
 {
-	this->strength = strength;
 }
 
-void Tool::setStrength(int strength)
-{
-	this->strength = strength;
+/*********************************************************************
+** Function:		Tool::setStrength
+** Description:		Setter for setting the set Tool strength
+** Parameters:		N/A
+** Pre-Conditions:	N/A
+** Post-Conditions: Tool strength value is set.
+*********************************************************************/
+void Tool::setStrength(int str) {
+	this->strength = str;
 }
 
-int Tool::getStrength() const
+/*********************************************************************
+** Function:		Tool::getStrength
+** Description:		Getter for getting the set Tool strength
+** Parameters:		N/A
+** Pre-Conditions:	N/A
+** Post-Conditions: Tool strength value is returned.
+*********************************************************************/
+int Tool::getStrength()
 {
-		return this->strength;
+	return this->strength;
 }
 
-char Tool::getType() const
+/*********************************************************************
+** Function:		Tool::getType
+** Description:		Getter for returning the Tool type
+** Parameters:		N/A
+** Pre-Conditions:	N/A
+** Post-Conditions: Tool type char is returned.
+*********************************************************************/
+char Tool::getType()
 {
-		return this->type;
+	return this->type;
 }
 
 //Destructor

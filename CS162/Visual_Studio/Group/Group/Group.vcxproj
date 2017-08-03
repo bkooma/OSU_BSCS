@@ -24,7 +24,6 @@
     <ClInclude Include="RPSGame.hpp" />
     <ClInclude Include="Scissors.hpp" />
     <ClInclude Include="Tool.hpp" />
-    <ClInclude Include="userMenu.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="inputVerification.cpp" />
@@ -34,7 +33,6 @@
     <ClCompile Include="RPSGame.cpp" />
     <ClCompile Include="Scissors.cpp" />
     <ClCompile Include="Tool.cpp" />
-    <ClCompile Include="userMenu.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{01CDD971-9DC3-48FB-B94A-55A28571EE97}</ProjectGuid>

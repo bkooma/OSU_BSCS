@@ -1,9 +1,10 @@
 /**************************************************************************************
-** rock.cpp is the Rock derived class function implementation file.
-** Author:  Byron Kooima
+** Rock.cpp is the Rock derived class function implementation file.
+** Authors:  Byron Kooima, Alexander Jennison, Polly Sobeck,
+**           Dai Duong Nguyen, Zachary Bellone
 ** Date: 2017/07/30
 ** Description: CS162 Week5 Group10
-** The rock class represents a Rock Derived class. It inherits the strength, type, and
+** The Rock class represents a Rock Derived class. It inherits the strength, type, and
 ** fight() function from the Tool base class. The fight function passes in a Tool
 ** pointer and establishes the strength of Rock when playing against Paper or Scissors.
 ** fight() returns the enumerated "Fight" value based on the results of taking on
@@ -23,7 +24,7 @@
 *********************************************************************/
 Rock::Rock()
 {
-	this->strength = 1;
+	this->setStrength(1);
 	this->type = 'r';
 }
 
@@ -50,7 +51,6 @@ Rock::Rock(int strength) : Tool(strength)
 ** Post-Conditions: The round is played and the resulting winner is
 ** 					returned to the main game.
 *********************************************************************/
-
 FightResult Rock::fight(Tool* tool)
 {
 	int rStrength = 1;
@@ -58,11 +58,11 @@ FightResult Rock::fight(Tool* tool)
 
   // Adjust strength of Rock against computer opponent
 	if (tool->getType() == 'p')
-		rStrength = (this->strength)/2;
+		rStrength = (this->getStrength())/2;
 	else if (tool->getType() == 's')
-		rStrength = (this->strength)*2;
+		rStrength = (this->getStrength())*2;
 	else
-		rStrength = this->strength;
+		rStrength = this->getStrength();
 
 	std::cout << "Your rock strength is " << rStrength << "\n";
 	

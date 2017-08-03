@@ -16,6 +16,7 @@
 #include <limits>
 #include <cctype>
 #include <iostream>
+#include <string>
 template <class InputType>
 
 /*********************************************************************

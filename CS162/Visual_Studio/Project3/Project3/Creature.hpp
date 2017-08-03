@@ -26,20 +26,21 @@ protected:
 public:
 	Creature();
 //	Creature(int strength);
-	virtual int attackRoll() = 0;
-	virtual int defenseRoll() = 0;
-	virtual int inflict_pain(int attack, int defense);
-	virtual void revive() = 0;
+	virtual int attack_roll() = 0;
+	virtual int defense_roll() = 0;
+	virtual void recover_strength() = 0;
 
-	bool is_dead();
-	int sum_die(int dieNum, int dieSides);
-
+	// Getters
 	std::string get_name();
 	int get_strength();
 	int get_armor();
 	int get_points();
 	std::string get_special();
-
+	
+	virtual int inflict_pain(int attack, int defense);
+	int die_roll(int dieNum, int dieSides);
+	bool defeated();
+	
 	virtual ~Creature();
 };
 

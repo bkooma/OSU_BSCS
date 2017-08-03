@@ -16,9 +16,9 @@ class Vampire:public Creature {
 public:
 	Vampire();
 
-	virtual int attackRoll();
-	virtual int defenseRoll();
-	virtual void revive();
+	virtual int attack_roll();
+	virtual int defense_roll();
+	virtual void recover_strength();
 	virtual int inflict_pain(int attack, int defense);
 
 	virtual ~Vampire();
