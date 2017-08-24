@@ -1,44 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Barbarian">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Position X="0.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAEAAAAAABAAAAACAAAAAAAAAACAAAAAAAAAAAI=</HashCode>
+      <HashCode>AAAAAAEAABAAAAAAAAACAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
       <FileName>Barbarian.hpp</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BlueMen">
-    <Position X="2.5" Y="0.5" Width="1.5" />
+    <Position X="2.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAABABAAAAAAAAAAAACAAACAAAAAAAAAAAI=</HashCode>
+      <HashCode>AAAAAAAAABABAAAAAAAAAAAAAACAAAAAAEAAAAAAAIA=</HashCode>
       <FileName>BlueMen.hpp</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Creature">
-    <Position X="3.75" Y="3.75" Width="4" />
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>IAAAAACAAAAACBAAAAABAABwIAAEAACIQAQoAJDAACI=</HashCode>
+      <HashCode>IAAAAAAAABQACBAACAAABABwIAAEAAAIQEQIAJBAAIA=</HashCode>
       <FileName>Creature.hpp</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="HarryPotter">
-    <Position X="4.75" Y="0.5" Width="1.5" />
+    <Position X="5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAQAAAABAAEAAAAAAAABAAAACAAAAAAACAAAI=</HashCode>
+      <HashCode>AAAAAAAAQBAAAAAAEAAAAAAAABAAAAAAAEAAAAAAAIA=</HashCode>
       <FileName>HarryPotter.hpp</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Medusa">
-    <Position X="8.75" Y="0.5" Width="1.5" />
+    <Position X="9.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAABAAgBAAAAAAAAAAAAAAAACAAAAAAAAAAAI=</HashCode>
+      <HashCode>AAAAAAAAABAAgAAAAAAAAAAAAAAAAAAAAEAAAAAAAIA=</HashCode>
       <FileName>Medusa.hpp</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Vampire">
-    <Position X="6.75" Y="0.5" Width="1.5" />
+    <Position X="7.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAABACAAAAAAAAAAAAAACAAAAAQACAAAI=</HashCode>
+      <HashCode>AAAAAAAAABAAAAACAAAAAAAAAAAAAAAAAEAAQAAAAIA=</HashCode>
       <FileName>Vampire.hpp</FileName>
     </TypeIdentifier>
   </Class>

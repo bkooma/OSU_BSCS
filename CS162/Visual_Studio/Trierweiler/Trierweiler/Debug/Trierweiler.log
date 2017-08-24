@@ -1,0 +1,14 @@
+﻿  Vampire.cpp
+  TreasureRoom.cpp
+  SwitchRoom.cpp
+  Space.cpp
+c:\users\bkooi\google drive\osu\osu_bscs\cs162\visual_studio\trierweiler\trierweiler\space.cpp(61): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  main.cpp
+  Gaurd.cpp
+  Creature.cpp
+c:\users\bkooi\google drive\osu\osu_bscs\cs162\visual_studio\trierweiler\trierweiler\creature.cpp(30): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  BossRoom.cpp
+  BlueMen.cpp
+  Generating Code...
+  Trierweiler.vcxproj -> C:\Users\bkooi\Google Drive\OSU\OSU_BSCS\CS162\Visual_Studio\Trierweiler\Debug\Trierweiler.exe
+  Trierweiler.vcxproj -> C:\Users\bkooi\Google Drive\OSU\OSU_BSCS\CS162\Visual_Studio\Trierweiler\Debug\Trierweiler.pdb (Partial PDB)

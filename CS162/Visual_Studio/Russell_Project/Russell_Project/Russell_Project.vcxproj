@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{080FDF20-8CC9-4F06-A123-2D75A8AFA398}</ProjectGuid>
+    <RootNamespace>Russell_Project</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\asciiArt.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\AttPotion.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Bag.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Barbarian.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\BlueMen.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Combat.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Consumable.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Creature.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\cs162_utilities.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\defConst.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\DefPotion.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Die.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Forest.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Game.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\HarryPotter.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Hero.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Hills.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Item.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Map.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Medusa.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Ore.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Plains.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Resource.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Space.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Stone.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\StrPotion.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Vampire.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Village.hpp" />
+    <ClInclude Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Wood.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\asciiArt.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\AttPotion.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Bag.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Barbarian.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\BlueMen.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Combat.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Consumable.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Creature.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\cs162_utilities.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\DefPotion.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Die.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\finalMain.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Forest.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Game.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\HarryPotter.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Hero.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Hills.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Item.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Map.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Medusa.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Ore.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Plains.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Resource.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Space.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Stone.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\StrPotion.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Vampire.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Village.cpp" />
+    <ClCompile Include="..\..\..\..\..\GitHub\Final_Project\Moon_Russell_Final_Project\Wood.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

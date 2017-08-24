@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ArkhamAsylum" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAgAQAAAAACAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ArkhamAsylum.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BatCave" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAABAAACAAAAABAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>BatCave.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Batman" Collapsed="true">
+    <Position X="6.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAIAAAAAIAAAAAAAAAAIgCAAAAAAAAAAAI=</HashCode>
+      <FileName>Batman.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Creature">
+    <Position X="4.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAACAIAABQACBAICIAAhAB4IAAEBACIQAQIAJBAAAI=</HashCode>
+      <FileName>Creature.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RasAlGhul" Collapsed="true">
+    <Position X="6.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAABAAAAAAAIAQAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>RasAlGhul.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Item" Collapsed="true">
+    <Position X="8.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAAAAABAAAAAgAAAAAQQA0AAAAAAEAQgAAAAAAAAA=</HashCode>
+      <FileName>Item.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IvyLair" Collapsed="true">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAgAAAAAAAACAAAAABAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IvyLair.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LeagueOfShadows" Collapsed="true">
+    <Position X="6.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAIAAAAAAAICAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>LeagueOfShadows.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoisonIvy" Collapsed="true">
+    <Position X="6.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAIAAAAAAAAAAAAWAAAAAAAAAAAA=</HashCode>
+      <FileName>PoisonIvy.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scarecrow" Collapsed="true">
+    <Position X="6.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAMAAAAAAAAAAAACQAAAAAAAAAAA=</HashCode>
+      <FileName>Scarecrow.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sAAAADAABAACAgAACACACAAABABICAAIgAAAQgAAsAA=</HashCode>
+      <FileName>Space.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="userMenu" Collapsed="true">
+    <Position X="2.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAABAAAgAAIIAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>userMenu.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UtilityBelt" Collapsed="true">
+    <Position X="8.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQDAAAQAgYBAAhAAAAAAAAAAAAQAAAAAAABgAAAAAA=</HashCode>
+      <FileName>UtilityBelt.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Riddler" Collapsed="true">
+    <Position X="6.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAoAAAAAAAAAAAACAAAAAAAAAAIA=</HashCode>
+      <FileName>Riddler.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Warehouse" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAgAAAAACAAAAABAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Warehouse.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WayneEnterprise" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAIAAAAAAEA=</HashCode>
+      <FileName>WayneEnterprise.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WayneManner" Collapsed="true">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="Space" FixedFromPoint="true">
+      <Path>
+        <Point X="1.25" Y="2" />
+        <Point X="1.25" Y="1.566" />
+        <Point X="11.5" Y="1.566" />
+        <Point X="11.5" Y="1.191" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>gAAAAIAAAAAAAAAAAACACAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WayneManner.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

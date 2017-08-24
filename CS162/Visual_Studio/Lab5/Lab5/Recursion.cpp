@@ -118,7 +118,7 @@ void Recursion::recursionMenu()
 			std::cin.ignore();
 
 			SafeInput <std::string>(iString,
-				[=](std::string Input) -> bool {
+				[](std::string Input) -> bool {
 				std::transform(Input.begin(), Input.end(),
 					Input.begin(), ::toupper);
 				return (Input.compare("") != 0);

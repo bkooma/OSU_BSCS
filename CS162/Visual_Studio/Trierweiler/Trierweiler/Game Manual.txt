@@ -1,0 +1,112 @@
+BlueMen Adventure Manual:
+
+I. Dungeon Symbols:
+
+a) "O" - is the BlueMen
+
+b) "V" - is a vampire gaurd
+
+c) "D" - is Dracula
+
+d) "S" - is a switch
+
+e) "T" - is a treasure chest  
+
+II. Room Types:
+
+a) Switch Room - Flip the switch "S" to reveal hidden doors
+
+------------------
+|                |
+|                |
+|        S       |      
+|                |
+|                |
+------------------
+
+Some of the rooms have vampire gaurds. If you are caught by a gaurd the game
+is over. You are safe when traveling around the rooms circumference. Doors
+will remain open once you flip the switch regardless if you leave the room.
+
+b) Treasure Room - Collect the treasure "T" to help you on your quest
+
+------------------
+|                |
+|                |
+|        T       |      
+|                |
+|                |
+------------------
+
+You can collect fellow BlueMen to help you fight Dracula, or, collect the
+dungeon key to unlock all locked doors. You can only collect a treasure once
+regardless if you leave the room.
+
+c) Dracula's Liar - Defeat Dracula "D" to escape the dungeon
+
+------------------
+|                |
+|                |
+|        D       |      
+|                |
+|                |
+------------------
+
+The BlueMen are strongest when all three of them are together. You only need the 
+dungeon key to enter Dracula's liar, but your chances of beating him are greater 
+if you collect your fellow BlueMen as well.
+
+III. Keyboard commands
+
+a) "w" - move North
+
+b) "d" - move East
+
+c) "s" - move South
+
+d) "a" - move West
+
+e) "h" - reveal room hint
+
+f) "i" - show BlueMen's items
+
+g) "x" - exit the game
+
+IV. Flipping switch/Collecting treasure/Fighting Dracula
+
+------------------
+|                |
+|                |
+|        D O     |      
+|                |
+|                |
+------------------
+
+To flip a switch, collect a treasure, or fight Dracula, move the BlueMen next to the
+the symbol and press the enter key on the keyboard.
+
+V. Dungeon layout
+
+		           Dracula's
+		           Liar
+		            ^
+		            |
+		            V
+West	     West	    Main           East           East		
+Treasure <-> SwitchRoom <-> SwitchRoom <-> SwitchRoom <-> TreasureRoom	
+			    ^
+			    |
+			    V
+			    South
+			    SwitchRoom
+			    ^
+			    |
+			    V
+			    South
+			    TreasureRoom
+
+VI. Treasure
+
+East  TreasureRoom - Contains BlueMen, status is locked
+South TreasureRoom - Contains dungeon key, status is unlocked
+West  TreasureRoom - Contains BlueMen, status is locked

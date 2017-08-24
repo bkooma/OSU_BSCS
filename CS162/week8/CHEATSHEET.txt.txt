@@ -1,0 +1,50 @@
+This is the fastest way to move through the Batman Game (There is still an off chance you will lose in the end):
+
+1.	Add "Grapple Hook" to Utility Belt (menuOpt: 5)
+
+2.	Head to Gotham Warehouse (menuOpt: 4)
+
+3.	Suspend Riddler from the rafters (menuOpt: 3) - Receive "Antidote"
+
+4.	Either fight Riddler (menuOpt: 4) or Play the Riddler's game (menuOpt: 2) - Receive "Inoculation"
+	a. If two's company and three's a crowd... ANSWER: 9
+	b. If there are four apples and you take... ANSWER: 3
+	c. How many eggs can you put in an empty basket? ANSWER: 1
+
+5.	Head back to Batcave
+
+6.	Head down to Ivy's Lair (menuOpt: 3)
+
+7.	Give Ivy a kiss (menuOpt: 3) - Receive "Plant Toxin"
+
+8.	Optional: Fight Ivy (menuOpt: 4) - Receive "ReGen Potion"
+
+9.	Head back to Batcave
+
+10.	Head right to Arkham Asylum (menuOpt: 2)
+
+11.	Fight fire with fire (menuOpt: 3) - Receive "Batarang"
+
+12.	Either fight Scarecrow (menuOpt: 4) or Steal Fear Gas from Scarecrow's stash (menuOpt: 2) - Receive "Fear Gas"
+
+13.	Optional: Use ReGen potion to restore life (menuOpt: 7)
+
+14.	Head up to Wayne Manner (menuOpt: 1)
+
+15.	Manage Utility Belt items (menuOpt: 6) "Remove Inoculation and Antidote - no longer needed"
+
+16.	Apply gas to instill fear (menuOpt: 3)
+
+17.	Use Batarang to stun half the members (menuOpt: 4)
+
+18.	Fight League of Shadows (menuOpt: 5) - Receive "Map to Ghul" and "Lazarus Pit Water"
+
+19.	Optional: Head down to Batcave and use ReGen potion to restore all your strength
+
+20.	Head to Wayne Enterprise (menuOpt: 2)
+
+21.	Apply Gas to instill fear (menuOpt: 2)
+
+22.	Use Batarang to stun Ra's (menuOpt: 3)
+
+23.	Fight Ra's Al Ghul (menuOpt: 4)

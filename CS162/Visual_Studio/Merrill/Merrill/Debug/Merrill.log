@@ -1,0 +1,17 @@
+﻿  Treasury.cpp
+  Tower.cpp
+  Space.cpp
+  main.cpp
+  Library.cpp
+c:\users\bkooi\google drive\osu\osu_bscs\cs162\visual_studio\merrill\merrill\library.cpp(16): warning C4101: 'choice': unreferenced local variable
+  GrandHall.cpp
+  Game.cpp
+c:\users\bkooi\google drive\osu\osu_bscs\cs162\visual_studio\merrill\merrill\game.cpp(42): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Dungeon.cpp
+c:\users\bkooi\google drive\osu\osu_bscs\cs162\visual_studio\merrill\merrill\dungeon.cpp(16): warning C4101: 'choice': unreferenced local variable
+  Chambers.cpp
+c:\users\bkooi\google drive\osu\osu_bscs\cs162\visual_studio\merrill\merrill\chambers.cpp(16): warning C4101: 'choice': unreferenced local variable
+  Generating Code...
+c:\users\bkooi\google drive\osu\osu_bscs\cs162\visual_studio\merrill\merrill\library.cpp(208): warning C4715: 'Library::menu': not all control paths return a value
+  Merrill.vcxproj -> C:\Users\bkooi\Google Drive\OSU\OSU_BSCS\CS162\Visual_Studio\Merrill\Debug\Merrill.exe
+  Merrill.vcxproj -> C:\Users\bkooi\Google Drive\OSU\OSU_BSCS\CS162\Visual_Studio\Merrill\Debug\Merrill.pdb (Partial PDB)

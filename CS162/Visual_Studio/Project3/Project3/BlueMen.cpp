@@ -51,7 +51,7 @@ int BlueMen::attack_roll(){
 ** Pre-Conditions: N/A
 ** Post-Conditions: Returns an int from the die_roll function.
 *********************************************************************/
-int BlueMen::defense_roll(){
+int BlueMen::defense_roll(int attack){
 
 	// For every 4 points of damage, BlueMen lose one defense die
 	if (this->strength > 8)
@@ -64,8 +64,7 @@ int BlueMen::defense_roll(){
 		// Only a single die left
 		this->dieNumDefense = 1;
 
-	// Call the die_roll function for attack die
-	return die_roll(this->dieNumDefense, this->dieSidesDefense);
+	return Creature::defense_roll(attack);
 }
 
 /*********************************************************************

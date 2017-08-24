@@ -23,7 +23,7 @@ Creature::Creature()
 {
 	strength = 0;
 	armor = 0;
-	points = 0;
+	defPoints = 0;
 	name = "";
 	specialAttack = "";
 	dieNumAttack = 0;
@@ -79,9 +79,9 @@ int Creature::get_armor()
 ** Pre-Conditions: N/A
 ** Post-Conditions: Returns an int of the Creature points.
 *********************************************************************/
-int Creature::get_points()
+int Creature::get_defPoints()
 {
-	return points;
+	return defPoints;
 }
 
 /*********************************************************************
@@ -97,22 +97,23 @@ std::string Creature::get_special()
 }
 
 /*********************************************************************
-** Function: Creature::inflict_pain(int, int)
+** Function: Creature::defense_roll(int)
 ** Description: Standard function for all creatures to determine the
 **				damage inflicted during a round
 ** Parameters:	attack			The value of the attack die roll
-**				defense			The value of the defense die roll
 ** Pre-Conditions: N/A
 ** Post-Conditions: Returns an int for the damage inflicted after
 **					calculating the offense roll minus the defense 
 **					roll and armor. Will return 0 if the damage is
 **					less than 0
 *********************************************************************/
-int Creature::inflict_pain(int attack, int defense)
+int Creature::defense_roll(int attack)
 {
+	// Call the die_roll function for defense die
+	defPoints = die_roll(this->dieNumDefense, this->dieSidesDefense);
 	// Calculation for subtracting the defending creatures total defense
 	// from the attack roll
-	int total_pain = attack - (defense + armor);
+	int total_pain = attack - (defPoints + armor);
 
 	if (total_pain > 0)
 	{

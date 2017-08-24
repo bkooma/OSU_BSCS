@@ -1,0 +1,35 @@
+﻿  Wood.cpp
+  Village.cpp
+  Vampire.cpp
+  StrPotion.cpp
+  Stone.cpp
+  Space.cpp
+  Resource.cpp
+  Plains.cpp
+  Ore.cpp
+  Medusa.cpp
+  Map.cpp
+  Item.cpp
+  Hills.cpp
+  Hero.cpp
+  HarryPotter.cpp
+  Game.cpp
+  Forest.cpp
+  finalMain.cpp
+  Die.cpp
+  DefPotion.cpp
+  Generating Code...
+  Compiling...
+  cs162_utilities.cpp
+c:\users\bkooi\google drive\osu\github\final_project\moon_russell_final_project\cs162_utilities.cpp(399): warning C4244: 'initializing': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Creature.cpp
+  Consumable.cpp
+  Combat.cpp
+  BlueMen.cpp
+  Barbarian.cpp
+  Bag.cpp
+  AttPotion.cpp
+  asciiArt.cpp
+  Generating Code...
+  Russell_Project.vcxproj -> C:\Users\bkooi\Google Drive\OSU\OSU_BSCS\CS162\Visual_Studio\Russell_Project\Debug\Russell_Project.exe
+  Russell_Project.vcxproj -> C:\Users\bkooi\Google Drive\OSU\OSU_BSCS\CS162\Visual_Studio\Russell_Project\Debug\Russell_Project.pdb (Partial PDB)
